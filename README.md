@@ -53,6 +53,8 @@ Para gerar o token do Github indico esse guia.
 - Baixe o conversor de código lua para o conky
   ```wget https://raw.githubusercontent.com/brndnmtthws/conky/main/extras/convert.lua```
 - Copie o diretório github dentro de conky para o **~/.conky**
+- Dê permissão de execução chmod +x convert.lua
+- Execute o convert.lua apontando para o arquivo **~/.conky/github/conky**
 - Crie um Script de inicialização do conky, onde **user** é o nome do usuário do sistema
 
 ```
