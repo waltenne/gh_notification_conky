@@ -1,0 +1,73 @@
+conky.config = {
+	use_xft = true,
+	font = 'Terminus:size=8',
+	xftalpha = 0.8,
+	update_interval = 1.0,
+	total_run_times = 0,
+	own_window = true,
+	own_window_transparent = true,
+	own_window_argb_visual = true,
+	own_window_type = 'normal',
+	own_window_class = 'conky-semi',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	background = false,
+	double_buffer = true,
+	minimum_width = 300, minimum_height = 600,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = true,
+	default_shade_color = 'black',
+	default_outline_color = 'white',
+	default_bar_width = 150, default_bar_height = 5,
+	default_gauge_width = 20, default_gauge_height = 20,
+	imlib_cache_size = 0,
+	draw_shades = false,
+	alignment = 'top_right',
+	gap_x = 5,
+	gap_y = 35,
+	no_buffers = true,
+	uppercase = false,
+	cpu_avg_samples = 2,
+	override_utf8_locale = false,
+	default_color = '#ECEAE4',
+	color1 = '#9f907d',
+	color2 = '#01C400',
+};
+
+
+conky.text = [[
+
+${font AvantGardeLTMedium:bold:size=10}${color Tan1}System ${color slate grey}${hr 2}${font}
+${color1}${sysname} ${kernel}   ${alignr}${color}${machine}
+${color1}Intel Core2 Duo        ${alignr}${color}${freq_g}GHz
+${color1}Uptime                 ${alignr}${color}${uptime}
+${color1}Loadaverage            ${alignr}${color}${loadavg 1} ${loadavg 2} ${loadavg 3}
+#${color1}Cpu Temperature       ${alignr}${color}${acpitemp}C
+#${color1}Hdd Temperature       ${alignr}${color}${hddtemp /dev/sda}C
+
+${font AvantGardeLTMedium:bold:size=10}${color Tan1}Processors ${color slate grey}${hr 2}${font}
+${color1}Core 1                 ${alignr}${color}${cpu cpu1}%  ${cpubar cpu1}
+${color1}Core 2                 ${alignr}${color}${cpu cpu2}%  ${cpubar cpu2}
+${color1}Core 3                 ${alignr}${color}${cpu cpu3}%  ${cpubar cpu3}
+${color1}Core 4                 ${alignr}${color}${cpu cpu4}%  ${cpubar cpu4}
+
+${font AvantGardeLTMedium:bold:size=10}${color Tan1}Memory ${color slate grey}${hr 2}${font}
+${color1}Memory                 ${color}${alignr}${memeasyfree} / ${memmax}
+${color1}Currently              ${color}${alignr}${memperc}%   ${membar}
+
+${font AvantGardeLTMedium:bold:size=10}${color Tan1}Filesystem ${color slate grey}${hr 2}${font}
+${color1}/      ${color}${alignc}${fs_used /} / ${fs_size /} ${color}${alignr}${fs_free_perc /} %
+${color}${fs_bar 5,300 /}
+
+${font AvantGardeLTMedium:bold:size=10}${color Tan1}GitHub${color slate grey}${hr 2}${font}
+${color1}Repository             ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -r}
+${color1}Issues                 ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -i}
+${color1}Stars                  ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -s}
+${color1}Forks                  ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -f}
+${color1}Total Pull Request     ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -q}
+${color1}Last Pull Request      ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -p}
+
+${voffset 500}
+
+]];
