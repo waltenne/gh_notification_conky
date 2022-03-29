@@ -72,6 +72,8 @@ exit
 [Ubuntu](https://ubunlog.com/pt/iniciar-scripts-al-inicio-ubuntu/#:~:text=Para%20isso%20vamos%20Sistema%E2%80%93%3E%20Prefer%C3%AAncias,Ubuntu%20ir%C3%A1%20carregar%20nossos%20scripts.)
 [Debian](https://pt.stackoverflow.com/questions/249287/como-executar-comandos-do-shell-na-inicializa%C3%A7%C3%A3o-do-debian)
 
+- Edite o arquivo **~/.conky/github/conky** alterando a localização do main.py para a diretorio onde ficará no seu sistema
+
 # Video Funcionamento
 
 https://user-images.githubusercontent.com/38992117/160658039-d7d3d126-354e-48e9-8e44-8d7a0256adb3.mp4
