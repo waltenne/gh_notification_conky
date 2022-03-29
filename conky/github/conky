@@ -61,12 +61,12 @@ ${color1}/      ${color}${alignc}${fs_used /} / ${fs_size /} ${color}${alignr}${
 ${color}${fs_bar 5,300 /}
 
 ${font AvantGardeLTMedium:bold:size=10}${color Tan1}GitHub${color slate grey}${hr 2}${font}
-${color1}Repository             ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -r}
-${color1}Issues                 ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -i}
-${color1}Stars                  ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -s}
-${color1}Forks                  ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -f}
-${color1}Total Pull Request     ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -q}
-${color1}Last Pull Request      ${alignr}${color}${execi 15 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -p}
+${color1}Repository             ${alignr}${color}${execi 60 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -r}
+${color1}Issues                 ${alignr}${color}${execi 60 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -i}
+${color1}Stars                  ${alignr}${color}${execi 60 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -s}
+${color1}Forks                  ${alignr}${color}${execi 60 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -f}
+${color1}Total Pull Request     ${alignr}${color}${execi 60 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -q}
+${color1}Last Pull Request      ${alignr}${color}${execi 60 /bin/python3 /home/waltenne/Documentos/learning-python/github_repo_notification/main.py -p}
 
 ${voffset 500}
 
